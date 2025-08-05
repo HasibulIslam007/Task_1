@@ -369,6 +369,9 @@ button {
 }
 
 /* ========== INFO SECTION ========== */
+
+/* 
+
 .info-section {
   padding: 3.125rem 0.625rem;
   background: var(--section-bg);
@@ -435,7 +438,7 @@ button {
   position: absolute;
   left: 0;
 }
-
+ */
 @media (max-width: 1300px) {
   .header {
     flex-direction: column;
