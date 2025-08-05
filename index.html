@@ -4,20 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noseclip Product Page</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script defer src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
   </head>
-  <body>
+
+  <body class="page-container">
     <!-- Header -->
     <header class="header">
-      <div class="logo or_clr">logo</div>
-      <nav class="nav">
+      <div class="logo">logo</div>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+
+      <nav class="nav" id="navMenu">
         <ul>
-          <li class="nav-item or_clr">Shop</li>
+          <li>Shop</li>
           <li>Home</li>
           <li>Why It Works</li>
           <li>Features</li>
@@ -29,7 +39,8 @@
           <li>Shop Bundles</li>
         </ul>
       </nav>
-      <button class="contact-btn or_clr">Contact Us →</button>
+
+      <button class="contact-btn">Contact Us →</button>
     </header>
 
     <!-- Hero Section -->
@@ -53,6 +64,7 @@
           />
           <span class="happy-customers">26k+ Happy Customers</span>
         </div>
+
         <h1 class="hero-title">Breathe better,<br />live better!</h1>
         <p class="hero-subtext">
           Discover how effortless breathing can enhance your life.<br />Take the
@@ -65,22 +77,21 @@
     <!-- Product Section -->
     <section class="product">
       <div class="product-wrapper">
-        <!-- Left: Product Image + Thumbnails -->
+        <!-- Product Images -->
         <div class="product-images">
           <img
-            src="/images/product_1.png"
+            src="./images/product_1.png"
             alt="Main product"
             class="main-img"
           />
           <div class="thumbnails">
-            <img src="/images/producty_2.png" alt="thumb 1" />
-            <img src="/images/prroduct_3.png" alt="thumb 2" />
-            <img src="/images/prroduct_3.png" alt="thumb 3" />
-            <img src="/images/product_4.png" alt="thumb 4" />
+            <img src="./images/producty_2.png" alt="Thumbnail 1" />
+            <img src="./images/prroduct_3.png" alt="Thumbnail 2" />
+            <img src="./images/product_4.png" alt="Thumbnail 3" />
           </div>
         </div>
 
-        <!-- Right: Product Info -->
+        <!-- Product Info -->
         <div class="product-info">
           <div class="rating">
             ⭐⭐⭐⭐⭐ <strong>4.5</strong> (500+ Reviews)
@@ -91,7 +102,7 @@
           <div class="price">
             <span class="discounted">$12.00</span>
             <span class="original">$20.00</span>
-            <span class="save-badge">SAVE 10%</span>
+            <span class="save-badge">SAVE 40%</span>
           </div>
 
           <h3>Description:</h3>
@@ -105,7 +116,7 @@
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png"
                 class="check-icon"
-                alt="check"
+                alt="✓"
               />
               Boost performance
             </li>
@@ -113,7 +124,7 @@
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png"
                 class="check-icon"
-                alt="check"
+                alt="✓"
               />
               Stop snoring
             </li>
@@ -121,7 +132,7 @@
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png"
                 class="check-icon"
-                alt="check"
+                alt="✓"
               />
               Optimized Airflow
             </li>
@@ -129,7 +140,7 @@
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png"
                 class="check-icon"
-                alt="check"
+                alt="✓"
               />
               100% Drug Free
             </li>
@@ -139,16 +150,16 @@
 
           <div class="payments">
             <button class="pay-btn">
-              <img src="/images/aple.png" alt="Apple Pay" />
+              <img src="./images/aple.png" alt="Apple Pay" />
             </button>
             <button class="pay-btn">
-              <img src="/images/google.png" alt="Google Pay" />
+              <img src="./images/google.png" alt="Google Pay" />
             </button>
             <button class="pay-btn">
-              <img src="/images/visa_1.png" alt="Shop Pay" />
+              <img src="./images/visa_1.png" alt="Visa 1" />
             </button>
             <button class="pay-btn">
-              <img src="/images/visa.png" alt="Visa" />
+              <img src="./images/visa.png" alt="Visa 2" />
             </button>
           </div>
 
@@ -171,6 +182,55 @@
               </p>
             </details>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <div class="info-block">
+        <img
+          src="./images/dis_img_2.png"
+          alt="Struggling to breathe"
+          class="info-img"
+        />
+        <div class="info-text">
+          <h2>Pain Points</h2>
+          <h3>Struggling with Snoring or Congestion?</h3>
+          <p>
+            Whether it’s snoring, allergies, or breathing difficulties during
+            exercise, our nasal clip is here to help. These issues can disrupt
+            your sleep, lower your energy, and impact your quality of life.
+          </p>
+          <ul class="info-list">
+            <li>Persistent snoring</li>
+            <li>Nasal congestion</li>
+            <li>Allergies affecting breathing</li>
+            <li>Struggling to breathe during workouts</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-block reverse">
+        <img
+          src="./images/dis_img_1.png"
+          alt="Breathing solution"
+          class="info-img"
+        />
+        <div class="info-text">
+          <h2>Solution Overview</h2>
+          <h3>Breathe Easy with Noseclip</h3>
+          <p>
+            Our nasal clip is scientifically designed to fit seamlessly into
+            your daily routine.
+          </p>
+          <ul class="info-list">
+            <li>Enhance airflow</li>
+            <li>Reduce snoring</li>
+            <li>Clear nasal passages</li>
+            <li>Made from soft materials</li>
+            <li>Comfortable & safe</li>
+          </ul>
         </div>
       </div>
     </section>
